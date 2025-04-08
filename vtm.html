@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style & Intérieur</title>
+    <link rel="stylesheet" href="css/vtm.css" />
+    <script src="js/vtm.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">Style <span>&</span> Intérieur</div>
+        <input
+          type="text"
+          placeholder="Que recherchez-vous ?"
+          class="search-bar"
+        />
+        <div class="icons">
+          <a href="#">Se connecter / s'inscrire</a>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <button class="menu-btn">&#9776;</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="highlight">Bons plans</a></li>
+          <li><a href="vtm.html">Vêtements</a></li>
+          <li><a href="#">Accessoires</a></li>
+          <li><a href="#">Déco</a></li>
+          <li><a href="#">Marques</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="sale-banner">
+      <div class="sale-content">
+        <h1 class="sale-text">SOLDES <span>-50%</span></h1>
+        <h1 class="slogan">Avec nous, vous ne regretterez pas vos achats</h1>
+        <button class="sale-btn">j’en profite</button>
+      </div>
+      <div class="sale-info">
+        <p><strong>EXCLUSIVITÉ</strong> Style & Intérieur</p>
+        <span>|</span>
+        <p>DES PRIX SOLDÉS ENCORE + EXCEPTIONNELS</p>
+      </div>
+    </section>
+
+    <!-- Navigation entre catégories -->
+    <div class="categories-nav">
+      <button class="category-btn active" onclick="showSection('femme', this)">
+        Femme
+      </button>
+      <button class="category-btn" onclick="showSection('homme', this)">
+        Homme
+      </button>
+      <button class="category-btn" onclick="showSection('enfant', this)">
+        Enfant
+      </button>
+    </div>
+
+    <!-- Section Femme -->
+    <section id="femme" class="catalogue-section active">
+      <h2 class="section-title">Collection Femme</h2>
+      <div class="produits-container">
+        <div class="produit-card">
+          <div class="image-container">
+            <img src="image/p.png" alt="Robe" class="produit-image" />
+            <span class="promo-badge">-30%</span>
+          </div>
+          <div class="produit-info">
+            <h3 class="produit-nom">Robe Fleurie</h3>
+            <p class="produit-description">Légère et parfaite pour l’été.</p>
+            <div class="produit-prix"><del>89€</del> 62€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Homme -->
+    <section id="homme" class="catalogue-section">
+      <h2 class="section-title">Collection Homme</h2>
+      <div class="produits-container">
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chemise" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Chemise Slim</h3>
+            <p class="produit-description">Coton stretch, facile à repasser.</p>
+            <div class="produit-prix">49€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Enfant -->
+    <section id="enfant" class="catalogue-section">
+      <h2 class="section-title">Collection Enfant</h2>
+      <div class="produits-container">
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Body bébé" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Pack Body x5</h3>
+            <p class="produit-description">100% coton bio, motifs colorés.</p>
+            <div class="produit-prix">35€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="produit-card">
+          <img src="image/p.png" class="produit-image" alt="Chaussures" />
+          <div class="produit-info">
+            <h3 class="produit-nom">Sandales</h3>
+            <p class="produit-description">
+              En cuir véritable, dispo en 3 couleurs.
+            </p>
+            <div class="produit-prix">75€</div>
+            <div class="produit-actions">
+              <button class="btn btn-primary">Acheter</button>
+              <button class="btn btn-secondary">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Catégories -->
+        <div class="footer-column">
+          <h3 class="footer-title">CATÉGORIES</h3>
+          <ul>
+            <li>Baskets - Chaussures</li>
+            <li>Jeans - Pantalons</li>
+            <li>T-shirts</li>
+            <li>Sweats - Pulls</li>
+            <li>Ensembles</li>
+            <li>Blousons - Vestes</li>
+            <li>Joggings</li>
+            <li>Sous - Vêtements</li>
+            <li>Casquettes</li>
+            <li>Chemises</li>
+            <li>Shorts - Bermudas</li>
+            <li>Accessoires</li>
+            <li>Polos</li>
+            <li>Débardeurs</li>
+            <li>Robes - Jupes</li>
+          </ul>
+        </div>
+
+        <!-- Top Marques -->
+        <div class="footer-column">
+          <h3 class="footer-title">TOP MARQUES</h3>
+          <ul>
+            <li>LBO</li>
+            <li>adidas</li>
+            <li>Tommy Hilfiger</li>
+            <li>BOSS</li>
+            <li>Lacoste</li>
+            <li>Jack And Jones</li>
+            <li>Frilivin</li>
+            <li>Classic Series</li>
+            <li>Teddy Yacht Club</li>
+            <li>Calvin Klein</li>
+          </ul>
+        </div>
+
+        <!-- Aide & Informations -->
+        <div class="footer-column">
+          <h3 class="footer-title">AIDE & INFORMATIONS</h3>
+          <ul>
+            <li>Livraisons et retours</li>
+            <li>Aide</li>
+            <li>Avis La Boutique Officielle</li>
+            <li>Conditions Générales de Vente</li>
+            <li>Correspondance des tailles</li>
+            <li>Mentions Légales</li>
+            <li>Jobs</li>
+            <li>Code promo</li>
+          </ul>
+        </div>
+
+        <!-- Confidentialité -->
+        <div class="footer-column">
+          <h3 class="footer-title">CONFIDENTIALITÉ</h3>
+          <ul>
+            <li>Politique de confidentialité</li>
+            <li>Paramètres des données</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

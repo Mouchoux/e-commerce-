@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style & Intérieur</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">Style <span>&</span> Intérieur</div>
+        <input
+          type="text"
+          placeholder="Que recherchez-vous ?"
+          class="search-bar"
+        />
+        <div class="icons">
+          <a href="#">Se connecter / s'inscrire</a>
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+          <button class="menu-btn">&#9776;</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="highlight">Bons plans</a></li>
+          <li><a href="vtm.html">Vêtements</a></li>
+          <li><a href="#">Accessoires</a></li>
+          <li><a href="#">Déco</a></li>
+          <li><a href="#">Marques</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="sale-banner">
+      <div class="sale-content">
+        <h1 class="sale-text">SOLDES <span>-50%</span></h1>
+        <h1 class="slogan">Avec nous, vous ne regretterez pas vos achats</h1>
+        <button class="sale-btn">j’en profite</button>
+      </div>
+      <div class="sale-info">
+        <p><strong>EXCLUSIVITÉ</strong> Style & Intérieur</p>
+        <span>|</span>
+        <p>DES PRIX SOLDÉS ENCORE + EXCEPTIONNELS</p>
+      </div>
+    </section>
+
+    <section id="slider">
+      <div class="slider-container">
+        <div class="slider">
+          <img src="image/1.png" class="slide active" alt="Image 1" />
+          <img src="image/p.png" class="slide" alt="Image 2" />
+          <img src="image/p.png" class="slide" alt="Image 3" />
+          <img src="image/p.png" class="slide" alt="Image 4" />
+          <img src="image/p.png" class="slide" alt="Image 5" />
+        </div>
+
+        <!-- Boutons Suivant et Précédent -->
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+        <!-- Indicateurs (petits points) -->
+        <div class="slider-indicators">
+          <span class="indicator active" data-index="0"></span>
+          <span class="indicator" data-index="1"></span>
+          <span class="indicator" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- À placer après votre section slider existante -->
+    <section class="catalogue-section">
+      <div class="main-container">
+        <!-- Section Enfant -->
+        <div id="enfant" class="category-container">
+          <h2 class="category-title">Collection Enfant</h2>
+          <button
+            class="nav-btn prev-btn"
+            onclick="scrollCategory('enfant', -280)"
+          >
+            ❮
+          </button>
+          <div class="products-wrapper" id="enfant-products">
+            <!-- Produit 1 -->
+            <div class="product-card">
+              <div class="promo-badge">-20%</div>
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Body bébé coton bio"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Body Bébé Coton Bio</h3>
+                <p class="product-description">
+                  Lot de 3 bodies 100% coton bio
+                </p>
+                <div class="product-price" style="color: #ffd166">
+                  <span
+                    style="
+                      text-decoration: line-through;
+                      color: #999;
+                      font-size: 0.9rem;
+                    "
+                    >35€</span
+                  >
+                  28€
+                </div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Jouet éducatif"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Jouet Éducatif</h3>
+                <p class="product-description">Peluche interactive avec sons</p>
+                <div class="product-price" style="color: #ffd166">35€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Jouet éducatif"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Jouet Éducatif</h3>
+                <p class="product-description">Peluche interactive avec sons</p>
+                <div class="product-price" style="color: #ffd166">35€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Jouet éducatif"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Jouet Éducatif</h3>
+                <p class="product-description">Peluche interactive avec sons</p>
+                <div class="product-price" style="color: #ffd166">35€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Jouet éducatif"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Jouet Éducatif</h3>
+                <p class="product-description">Peluche interactive avec sons</p>
+                <div class="product-price" style="color: #ffd166">35€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Jouet éducatif"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Jouet Éducatif</h3>
+                <p class="product-description">Peluche interactive avec sons</p>
+                <div class="product-price" style="color: #ffd166">35€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card">
+              <div class="promo-badge">Nouveau</div>
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Baskets LED"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Baskets LED</h3>
+                <p class="product-description">Chaussures lumineuses</p>
+                <div class="product-price" style="color: #ffd166">45€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="nav-btn next-btn"
+            onclick="scrollCategory('enfant', 280)"
+          >
+            ❯
+          </button>
+        </div>
+
+        <div class="section-divider">
+          <span>↓ Collection Femme ↓</span>
+        </div>
+
+        <!-- Section Femme -->
+        <div id="femme" class="category-container">
+          <h2 class="category-title">Collection Femme</h2>
+          <button
+            class="nav-btn prev-btn"
+            onclick="scrollCategory('femme', -280)"
+          >
+            ❮
+          </button>
+          <div class="products-wrapper" id="femme-products">
+            <!-- Produit 1 -->
+            <div class="product-card">
+              <div class="promo-badge">-30%</div>
+              <div class="product-image-container">
+                <img src="image/p.png" alt="Robe d'été" class="product-image" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Robe d'Été Florale</h3>
+                <p class="product-description">Coton bio motifs floraux</p>
+                <div class="product-price" style="color: #ef476f">
+                  <span
+                    style="
+                      text-decoration: line-through;
+                      color: #999;
+                      font-size: 0.9rem;
+                    "
+                    >89€</span
+                  >
+                  62€
+                </div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img src="image/p.png" alt="Sac à main" class="product-image" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Sac à Main Cuir</h3>
+                <p class="product-description">
+                  Cuir végan compartiment sécurisé
+                </p>
+                <div class="product-price" style="color: #ef476f">79€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Produit 3 -->
+            <div class="product-card">
+              <div class="product-image-container">
+                <img
+                  src="image/p.png"
+                  alt="Sandales cuir"
+                  class="product-image"
+                />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Sandales Cuir</h3>
+                <p class="product-description">
+                  Cuir véritable semelle confort
+                </p>
+                <div class="product-price" style="color: #ef476f">75€</div>
+                <div class="product-actions">
+                  <button class="add-to-cart">Ajouter</button>
+                  <button class="cart-icon">🛒</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="nav-btn next-btn"
+            onclick="scrollCategory('femme', 280)"
+          >
+            ❯
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Catégories -->
+        <div class="footer-column">
+          <h3 class="footer-title">CATÉGORIES</h3>
+          <ul>
+            <li>Baskets - Chaussures</li>
+            <li>Jeans - Pantalons</li>
+            <li>T-shirts</li>
+            <li>Sweats - Pulls</li>
+            <li>Ensembles</li>
+            <li>Blousons - Vestes</li>
+            <li>Joggings</li>
+            <li>Sous - Vêtements</li>
+            <li>Casquettes</li>
+            <li>Chemises</li>
+            <li>Shorts - Bermudas</li>
+            <li>Accessoires</li>
+            <li>Polos</li>
+            <li>Débardeurs</li>
+            <li>Robes - Jupes</li>
+          </ul>
+        </div>
+
+        <!-- Top Marques -->
+        <div class="footer-column">
+          <h3 class="footer-title">TOP MARQUES</h3>
+          <ul>
+            <li>LBO</li>
+            <li>adidas</li>
+            <li>Tommy Hilfiger</li>
+            <li>BOSS</li>
+            <li>Lacoste</li>
+            <li>Jack And Jones</li>
+            <li>Frilivin</li>
+            <li>Classic Series</li>
+            <li>Teddy Yacht Club</li>
+            <li>Calvin Klein</li>
+          </ul>
+        </div>
+
+        <!-- Aide & Informations -->
+        <div class="footer-column">
+          <h3 class="footer-title">AIDE & INFORMATIONS</h3>
+          <ul>
+            <li>Livraisons et retours</li>
+            <li>Aide</li>
+            <li>Avis La Boutique Officielle</li>
+            <li>Conditions Générales de Vente</li>
+            <li>Correspondance des tailles</li>
+            <li>Mentions Légales</li>
+            <li>Jobs</li>
+            <li>Code promo</li>
+          </ul>
+        </div>
+
+        <!-- Confidentialité -->
+        <div class="footer-column">
+          <h3 class="footer-title">CONFIDENTIALITÉ</h3>
+          <ul>
+            <li>Politique de confidentialité</li>
+            <li>Paramètres des données</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
